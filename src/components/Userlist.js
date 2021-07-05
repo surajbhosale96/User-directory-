@@ -20,11 +20,7 @@ const Userlist = () => {
   }, [pagination]);
 
   const nextPage = () => {
-    if (!pagination) {
-      return "no data found";
-    } else {
-      setPagination(pagination + 1);
-    }
+    setPagination(pagination + 1);
   };
 
   const prevPage = () => {
