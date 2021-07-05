@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.table {
+  width: 90%;
+  margin: 0 auto;
+}
+thead {
+  height: 100px;
+  line-height: 100px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.avatar {
+  border-radius: 60px;
+}
+tr {
+  line-height: 140px;
+  text-align: center;
+}
+.first-name {
+  font-weight: 500;
+}
+.last-name {
+  font-weight: 500;
+}
+td {
+  cursor: pointer;
+}

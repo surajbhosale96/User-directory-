@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
+import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Userlist from "./components/Userlist";
+import Userdetails from "./components/Userdetails";
+import { BrowserRouter, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Route path="/" exact component={Userlist} />
+        <Route path="/Userlist/:id/" component={Userdetails} />
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
